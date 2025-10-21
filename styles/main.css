@@ -50,6 +50,7 @@
   --spacing-200: 2.4rem;
   --spacing-100: 1.6rem;
   --spacing-50: 0.4rem;
+  
 }
 
 /*HTML Styles*/
@@ -60,6 +61,32 @@ html {
 /*Body Styles*/
 body {
   font-size: 1.4rem; /*This will = 14px on the base line that we defined upove.*/
+  display: grid;
+  place-items: center;
+  background: var(--netural-color-cream);
+
+  .main {
+    /*Adjust the main to be grid to center everything*/
+    width: 100dvw;
+    .card-wrapper {
+        .card-image{}
+        .card-content{
+            .card-title{
+                .item-category-name{}
+                .item-name{}
+                .item-description{}
+            }
+            .price-content{
+                .current-price{}
+                .last-price{}
+            }
+            .purchase-button{
+                .button-icon{}
+            }
+
+        }
+    }
+  }
 }
 
 .footer {

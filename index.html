@@ -24,24 +24,53 @@
       <link rel="stylesheet" href="styles/mediaquery.css">
 
   <title>Frontend Mentor | Product preview card component</title>
-  
+
 </head>
 <body>
-
-  Perfume
-
-  Gabrielle Essence Eau De Parfum
-
-  A floral, solar and voluptuous interpretation composed by Olivier Polge,
-  Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
-
-  Add to Cart
-
-  <div class="attribution">
-  </div>
+  <!-- main -->
+  <main class="main">
+    <!-- card-wrapper -->
+    <section class="card-wrapper" aria-labelledby="Gabrielle Essence Eau De Parfum">
+      <picture>
+        <source srcset="./images/image-product-desktop.jpg" media="(min-width: 43.75rem)">
+        <!-- image -->
+        <img
+          class="card-image"
+          src="./images/image-product-mobile.jpg"
+          alt="Gabrielle Essence Eau De Parfum"
+          width="300"
+          height="300"
+          loading="lazy"
+          decoding="async">
+      </picture>
+      <!-- card-content -->
+       <article class="card-content">
+        <!-- card title -->
+         <div class="card-title">
+           <p class="item-category-name">
+             Perfume
+          </p>
+          <h1 class="item-name">
+            Gabrielle Essence Eau De Parfum
+          </h1>
+          <p class="item-description">
+            A floral, solar and voluptuous interpretation composed by Olivier Polge,
+            Perfumer-Creator for the House of CHANEL.
+          </p>
+        </div>
+        <!-- price -->
+        <div class="price-content">
+          <p class="current-price">$149.99</p>
+          <del class="last-price">$169.99</del>
+        </div>
+        <!-- button -->
+        <button class="purchase-button" type="button" aria-label="Add to Cart">
+          <img class="button-icon" src="./images/icon-cart.svg" alt="" aria-hidden="true" width="32" height="32" loading="lazy">
+          Add to Cart
+        </button>
+       </article>
+    </section>
+  </main>
 
   <footer class="footer" id="footer">
     <div class="attribution">

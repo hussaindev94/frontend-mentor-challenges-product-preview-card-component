@@ -1,0 +1,108 @@
+/* =========================================================
+   Container Queries Support Template (barebones)
+   Notes:
+     1) Adjust breakpoints to your design.
+     2) Swap fixed units for relative/container units as needed.
+     3) Provide container names when you define them (e.g., comp, scroller).
+     4) Change scroll-state keywords per need (inline-start/end, block-start/end).
+   ========================================================= */
+
+/* ---------- 0) Negative gate (no CQ support) ---------- */
+/* Put global fallbacks here for browsers without container queries. */
+@supports not (container-type: inline-size) {
+
+  /* Example viewport fallbacks (contiguous ranges, using width) */
+  /* Mobile */
+  @media (320px <= width <= 750px) {
+    /* Fallback styles go here */
+  }
+
+  /* Tablet */
+  @media (751px <= width <= 1000px) {
+    /* Fallback styles go here */
+  }
+
+  /* Desktop */
+  @media (width >= 1001px) {
+    /* Fallback styles go here */
+  }
+}
+
+/* ---------- 1) General CQ support (size + style queries) ---------- */
+@supports (container-type: inline-size) {
+
+  /* ===== 1.1 SIZE CONTAINER QUERIES =====
+     Before using, define a query container in your component CSS, e.g.:
+     .COMP { container-type: inline-size; container-name: comp; }
+  */
+
+  /* Container variant (targets nearest query container) */
+  @container (inline-size <= 480px) {
+    /* styles for small container size */
+  }
+
+  @container (600px <= inline-size < 900px) {
+    /* styles for medium container size */
+  }
+
+  @container (inline-size >= 900px) {
+    /* styles for large container size */
+  }
+
+  /* Optional: gate use of container UNITS only (does NOT gate CQs themselves) */
+  @supports (width: 1cqw) {
+    /* Safe to use cqw/cqh/cqi/cqb/cqmin/cqmax inside here */
+    @container (inline-size >= 700px) {
+      /* e.g., spacing: 2cqw; type: calc(1rem + 0.5cqmin); */
+    }
+  }
+
+  /* ===== 1.2 STYLE FEATURE QUERIES =====
+     Before using, expose a custom prop on the container, e.g.:
+     .PANEL { container-type: normal; --variant: 'compact'; }
+  */
+  @container style(--variant: 'compact') {
+    /* styles for compact variant */
+  }
+
+  @container style(--variant: 'comfortable') {
+    /* styles for comfortable variant */
+  }
+}
+
+/* ---------- 2) Scroll-state queries ---------- */
+/* Requires both scroll-snap support and container queries. */
+@supports (scroll-snap-type: inline mandatory) and (container-type: inline-size) {
+
+  /* Befpore using, set u a snapping scroller as a CQ container, e.g.:
+     .SCROLLER {
+       overflow: auto;
+       scroll-snap-type: inline mandatory;   // not 'none'
+       container-type: inline-size;
+       container-name: scroller;
+     }
+     .ITEM { scroll-snap-align: start; }     // for snapped states
+  */
+
+  /* Named scroll-state queries (recommended) */
+  @container scroll-state(stuck: block-start) {
+    /* styles when a sticky child is actually stuck at block start */
+  }
+
+  @container scroll-state(scrollable: inline-end) {
+    /* styles only when more content exists toward inline end */
+  }
+
+  @container scroll-state(snapped: inline-start) {
+    /* styles when an item is snapped to inline start */
+  }
+
+  @container scroll-state(snapped: none) {
+    /* styles when there is no snap state / no snap context */
+  }
+
+  /* Unnamed variant (targets nearest scroll-state container) */
+  @container scroll-state(scrollable: inline-end) {
+    /* styles when scrollable on inline end */
+  }
+}

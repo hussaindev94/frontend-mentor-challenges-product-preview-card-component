@@ -1,0 +1,52 @@
+/*Define The variables here*/
+:root {
+  /*Fonts variables*/
+  --text-preset1: "fraunces-bold", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  --text-preset1-size: 3.2rem;
+  --text-preset1-line-height: 100%;
+  --text-preset1-letter-spacing: 0rem;
+
+  --text-preset2: "montaserrat-bold", system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+  --text-preset2-size: 1.4rem;
+  --text-preset2-line-height: 110%;
+  --text-preset2-letter-spacing: 0rem;
+/*We could define 1 variable for all medium, but I make them seperate to learn and follow the design file*/
+  --text-preset3: "montaserrat-medium", system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+  --text-preset3-size: 1.4rem;
+  --text-preset3-line-height: 160%;
+  --text-preset3-letter-spacing: 0rem;
+
+  --text-preset4: "montaserrat-medium", system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+  --text-preset4-size: 1.2rem;
+  --text-preset4-line-height: 120%;
+  --text-preset4-letter-spacing: 0.5rem;
+
+  --text-preset5: "montaserrat-medium", system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+  --text-preset5-size: 1.3rem;
+  --text-preset5-line-height: 120%;
+  --text-preset5-letter-spacing: 0rem;
+
+  /*Color variabels*/
+
+  /*Spacing variables*/
+}
+
+/*HTML Styles*/
+html {
+  font-size: 62.5%; /*This will make the base font size = 10px = 1rem, any px value converte it by 10 will result into rem equvalent value*/
+}
+
+/*Body Styles*/
+body {
+  font-size: 1.4rem; /*This will = 14px on the base line that we defined upove.*/
+}

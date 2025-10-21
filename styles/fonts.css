@@ -1,0 +1,23 @@
+/*This file will contain the fonts using @font-face rule*/
+/*Fraunces Bold*/
+@font-face {
+  font-family: "fraunces-bold";
+  src: url("/assets/fonts/Fraunces-Bold.otf") format("font/otf");
+  font-weight: 700;
+  font-display: swap;
+}
+/*Montserrat Bold*/
+@font-face {
+  font-family: "montaserrat-bold";
+  src: url("/assets/fonts/Montserrat-Bold.otf") format("font/otf");
+  font-weight: 700;
+  font-display: swap;
+}
+
+/*Montserrat Medium*/
+@font-face {
+  font-family: "montaserrat-medium";
+  src: url("/assets/fonts/Montserrat-Medium.otf") format("font/otf");
+  font-weight: 500;
+  font-display: swap;
+}

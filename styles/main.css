@@ -14,7 +14,7 @@
   --text-preset2-size: 1.4rem;
   --text-preset2-line-height: 110%;
   --text-preset2-letter-spacing: 0rem;
-/*We could define 1 variable for all medium, but I make them seperate to learn and follow the design file*/
+  /*We could define 1 variable for all medium, but I make them seperate to learn and follow the design file*/
   --text-preset3: "montaserrat-medium", system-ui, -apple-system,
     BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
     "Open Sans", "Helvetica Neue", sans-serif;
@@ -37,8 +37,19 @@
   --text-preset5-letter-spacing: 0rem;
 
   /*Color variabels*/
+  --primary-green-500: hsl(158, 36%, 37%);
+  --primary-green-700: hsl(158, 42%, 18%);
+  --netural-color-black: hsl(212, 21%, 14%);
+  --netural-color-white: hsl(0, 0%, 100%);
+  --netural-color-gray: hsl(228, 12%, 48%);
+  --netural-color-cream: hsl(30, 38%, 92%);
 
   /*Spacing variables*/
+  --spacing-500: 4rem;
+  --spacing-400: 3.2rem;
+  --spacing-200: 2.4rem;
+  --spacing-100: 1.6rem;
+  --spacing-50: 0.4rem;
 }
 
 /*HTML Styles*/
@@ -49,4 +60,29 @@ html {
 /*Body Styles*/
 body {
   font-size: 1.4rem; /*This will = 14px on the base line that we defined upove.*/
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: stretch;
+  margin-block-start: var(--spacing-100);
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    ul {
+      padding-inline: 0rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: var(--spacing-50);
+      li {
+        a {
+          color: hsl(228, 45%, 44%);
+        }
+      }
+    }
+  }
 }

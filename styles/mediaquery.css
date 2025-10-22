@@ -1,18 +1,44 @@
-/*This file will ba the base line of the media query for next projects*/
-/*Media queries will be for laying out the macro layout*/
+/*Viewport dimentions features mediaqueries*/
+@media (min-width: 48rem) {
+  body {
+    padding: 28.6rem 8.4rem;
 
+    .main {
+      .card-wrapper {
+        display: flex;
+        flex-direction: row;
+        max-width: 60rem;
 
-/*mobile display range*/
-@media (320px <= inline-size <= 375px){
+        .card-image-wrapper {
+          flex: 1.3;
+          align-self: stretch;
+          width: 30rem;
+          height: 45rem;
+          background: url("../images/image-product-desktop.jpg") lightgray
+            center center / 99.565% 100% no-repeat;
+          border-radius: 1rem 0rem 0rem 1rem;
+        }
 
+        .card-content {
+          flex: 1;
+          border-radius: 0rem 1rem 1rem 0rem;
+        }
+      }
+    }
+  }
 }
 
-/*tablet display range*/
-@media (400px <= inline-size <= 1000px){
-
-}
-
-/*disktop display range*/
-@media (1001px <= inline-size <= 1440px){
-
+/*Interaction features mediaqueries*/
+@media (pointer: fine) and (hover: hover) {
+  body {
+    .main {
+      .card-wrapper {
+        .card-content {
+          .purchase-button:hover {
+            background: hsl(158, 42%, 18%);
+          }
+        }
+      }
+    }
+  }
 }

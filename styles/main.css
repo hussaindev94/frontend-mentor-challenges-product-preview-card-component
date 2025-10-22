@@ -259,14 +259,48 @@ body {
         .card-content {
           flex: 1;
           border-radius: 0rem 1rem 1rem 0rem;
+
+          .item-category-name {
+            color: var(--netural-color-gray);
+            align-self: stretch;
+            font-family: var(--text-preset4);
+            font-size: var(--text-preset4-size);
+            font-style: normal;
+            font-weight: 500;
+            line-height: var(--text-preset4-line-height);
+            letter-spacing: var(--text-preset4-letter-spacing);
+          }
+          .item-name {
+            color: var(--netural-color-black);
+            align-self: stretch;
+            font-family: var(--text-preset1);
+            font-size: var(--text-preset1-size);
+            font-style: normal;
+            font-weight: 700;
+            line-height: var(--text-preset1-line-height);
+            letter-spacing: var(--text-preset1-letter-spacing);
+          }
+          .item-description {
+            color: var(--netural-color-gray);
+            align-self: stretch;
+            font-family: var(--text-preset3);
+            font-size: var(--text-preset3-size);
+            font-style: normal;
+            font-weight: 500;
+            line-height: var(--text-preset3-line-height);
+            letter-spacing: var(--text-preset3-letter-spacing);
+          }
+          .purchase-button {
+            font-family: var(--text-preset2);
+            font-size: var(--text-preset2-size);
+            font-style: normal;
+            font-weight: 700;
+            line-height: var(--text-preset2-line-height);
+            letter-spacing: var(--text-preset2-letter-spacing);
+          }
         }
       }
     }
-  }
-}
-@media (min-width: 62rem) {
-  body {
-    /* padding: 28.9rem 42rem 28.4rem 42rem; */
   }
 }
 

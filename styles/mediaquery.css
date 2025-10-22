@@ -27,11 +27,6 @@
     }
   }
 }
-@media (min-width: 62rem) {
-  body {
-    /* padding: 28.9rem 42rem 28.4rem 42rem; */
-  }
-}
 
 /*Interaction features mediaqueries*/
 @media (pointer: fine) and (hover: hover) {

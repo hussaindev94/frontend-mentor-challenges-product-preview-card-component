@@ -1,7 +1,7 @@
 /*Viewport dimentions features mediaqueries*/
 @media (min-width: 48rem) {
   body {
-    padding: 28.6rem 8.4rem;
+    /* padding: 28.6rem 8.4rem; */
 
     .main {
       .card-wrapper {
@@ -29,7 +29,7 @@
 }
 @media (min-width: 62rem) {
   body {
-    padding: 28.9rem 42rem 28.4rem 42rem;
+    /* padding: 28.9rem 42rem 28.4rem 42rem; */
   }
 }
 
